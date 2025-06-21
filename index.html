@@ -1,0 +1,732 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #cbaa65; background-color: #17171a}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #599e60; background-color: #17171a}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #aeb0b7; background-color: #17171a}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #acacac; background-color: #17171a}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #aeb0b7; background-color: #17171a; min-height: 16.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #4795f2; background-color: #17171a}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #c37b5a; background-color: #17171a}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #cbaa65; background-color: #17171a; min-height: 16.0px}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #676b72; background-color: #17171a}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #b965ac; background-color: #17171a}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #b965ad; background-color: #17171a}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #99a8ba; background-color: #17171a}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #676b72; background-color: #17171a; min-height: 16.0px}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; color: #269da9; background-color: #17171a}
+    span.s1 {color: #acacac}
+    span.s2 {color: #599e60}
+    span.s3 {color: #cbaa65}
+    span.s4 {color: #aeb0b7}
+    span.s5 {color: #4795f2}
+    span.s6 {color: #269da9}
+    span.s7 {color: #c37b5a}
+    span.s8 {color: #676b72}
+    span.s9 {color: #599e60; background-color: #1f2e31}
+    span.s10 {color: #b965ac}
+    span.s11 {color: #b965ad}
+    span.s12 {color: #99a8ba}
+    span.s13 {background-color: #1f2e31}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE <span class="s1">html</span>&gt;</p>
+<p class="p1">&lt;html <span class="s1">lang</span><span class="s2">="en"</span>&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta <span class="s1">charset</span><span class="s2">="UTF-8"</span>&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">  </span>&lt;meta </span><span class="s1">name</span>="viewport" <span class="s1">content</span>="width=device-width, initial-scale=1.0"<span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">  </span>&lt;title&gt;</span>Health &amp; Fitness Calculators<span class="s3">&lt;/title&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span><span class="s4">:</span>root <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">--primary</span>: <span class="s5">#4285f4</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>--secondary<span class="s4">: </span><span class="s5">#34a853</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">--danger</span>: <span class="s5">#ea4335</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">--warning</span>: <span class="s5">#fbbc05</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">--light</span>: <span class="s5">#f8f9fa</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">--dark</span>: <span class="s5">#343a40</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s3">* </span>{</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>box-sizing<span class="s4">: </span><span class="s2">border-box</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">margin</span>: <span class="s6">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">padding</span>: <span class="s6">0</span>;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s1">font-family</span><span class="s4">: </span>'Segoe UI'<span class="s4">, </span><span class="s3">Tahoma</span><span class="s4">, </span><span class="s3">Geneva</span><span class="s4">, </span><span class="s3">Verdana</span><span class="s4">, </span>sans-serif<span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s3">body </span>{</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>background-color<span class="s4">: </span><span class="s5">#f5f7fa</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">color</span>: <span class="s5">#333</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>line-height<span class="s4">: </span><span class="s6">1.6</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>container <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">max-width</span>: <span class="s6">1200</span><span class="s2">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">margin</span>: <span class="s6">0 </span><span class="s2">auto</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">padding</span>: <span class="s6">20</span><span class="s2">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span>header <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>text-align<span class="s4">: </span><span class="s2">center</span><span class="s4">;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-bottom<span class="s4">: </span><span class="s6">30</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">padding</span>: <span class="s6">20</span><span class="s2">px </span><span class="s6">0</span>;</p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s1">background</span><span class="s4">: </span>linear-gradient<span class="s4">(</span><span class="s6">135</span><span class="s2">deg</span><span class="s4">, </span>var<span class="s4">(</span>--primary<span class="s4">), </span>var<span class="s4">(</span>--secondary<span class="s4">));</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">color</span>: <span class="s2">white</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-radius<span class="s4">: </span><span class="s6">10</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">box-shadow</span>: <span class="s6">0 4</span><span class="s2">px </span><span class="s6">6</span><span class="s2">px </span><span class="s3">rgba</span>(<span class="s6">0</span>, <span class="s6">0</span>, <span class="s6">0</span>, <span class="s6">0.1</span>);</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s3">h1 </span>{</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">font-size</span>: <span class="s6">2.5</span><span class="s2">rem</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-bottom<span class="s4">: </span><span class="s6">10</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>calculator-tabs <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">display</span>: <span class="s2">flex</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>justify-content<span class="s4">: </span><span class="s2">center</span><span class="s4">;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-bottom<span class="s4">: </span><span class="s6">30</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">flex-wrap</span>: <span class="s2">wrap</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>tab-btn <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">padding</span>: <span class="s6">12</span><span class="s2">px </span><span class="s6">24</span><span class="s2">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">margin</span>: <span class="s6">0 5</span><span class="s2">px</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>background-color<span class="s4">: </span><span class="s2">white</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">border</span>: <span class="s2">none</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-radius<span class="s4">: </span><span class="s6">30</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">cursor</span>: <span class="s2">pointer</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>font-weight<span class="s4">: </span><span class="s6">600</span><span class="s4">;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>transition<span class="s4">: </span><span class="s2">all </span><span class="s6">0.3</span><span class="s2">s ease</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">box-shadow</span>: <span class="s6">0 2</span><span class="s2">px </span><span class="s6">5</span><span class="s2">px </span><span class="s3">rgba</span>(<span class="s6">0</span>, <span class="s6">0</span>, <span class="s6">0</span>, <span class="s6">0.1</span>);</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>tab-btn<span class="s4">.</span>active <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>background-color<span class="s4">: </span><span class="s3">var</span><span class="s4">(</span><span class="s3">--primary</span><span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">color</span>: <span class="s2">white</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>tab-btn<span class="s4">:</span>hover <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">transform</span>: <span class="s3">translateY</span>(-<span class="s6">2</span><span class="s2">px</span>);</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">box-shadow</span>: <span class="s6">0 4</span><span class="s2">px </span><span class="s6">8</span><span class="s2">px </span><span class="s3">rgba</span>(<span class="s6">0</span>, <span class="s6">0</span>, <span class="s6">0</span>, <span class="s6">0.15</span>);</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>calculator-container <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>background-color<span class="s4">: </span><span class="s2">white</span><span class="s4">;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-radius<span class="s4">: </span><span class="s6">10</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">padding</span>: <span class="s6">30</span><span class="s2">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">box-shadow</span>: <span class="s6">0 5</span><span class="s2">px </span><span class="s6">15</span><span class="s2">px </span><span class="s3">rgba</span>(<span class="s6">0</span>, <span class="s6">0</span>, <span class="s6">0</span>, <span class="s6">0.1</span>);</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-bottom<span class="s4">: </span><span class="s6">30</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>calculator <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">display</span>: <span class="s2">none</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>calculator<span class="s4">.</span>active <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">display</span>: <span class="s2">block</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>form-group <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-bottom<span class="s4">: </span><span class="s6">20</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span>label <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">display</span>: <span class="s2">block</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-bottom<span class="s4">: </span><span class="s6">8</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>font-weight<span class="s4">: </span><span class="s6">600</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span>input<span class="s4">, </span>select <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">width</span>: <span class="s6">100</span>%;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">padding</span>: <span class="s6">12</span><span class="s2">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">border</span>: <span class="s6">1</span><span class="s2">px solid </span><span class="s5">#ddd</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-radius<span class="s4">: </span><span class="s6">5</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">font-size</span>: <span class="s6">16</span><span class="s2">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>units-toggle <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">display</span>: <span class="s2">flex</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-bottom<span class="s4">: </span><span class="s6">20</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>units-toggle button <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">flex</span>: <span class="s6">1</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">padding</span>: <span class="s6">10</span><span class="s2">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">border</span>: <span class="s6">1</span><span class="s2">px solid </span><span class="s5">#ddd</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>background-color<span class="s4">: </span><span class="s2">white</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">cursor</span>: <span class="s2">pointer</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>units-toggle button<span class="s4">:</span>first-child <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-radius<span class="s4">: </span><span class="s6">5</span><span class="s2">px </span><span class="s6">0 0 5</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>units-toggle button<span class="s4">:</span>last-child <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-radius<span class="s4">: </span><span class="s6">0 5</span><span class="s2">px </span><span class="s6">5</span><span class="s2">px </span><span class="s6">0</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>units-toggle button<span class="s4">.</span>active <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>background-color<span class="s4">: </span><span class="s3">var</span><span class="s4">(</span><span class="s3">--primary</span><span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">color</span>: <span class="s2">white</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-color<span class="s4">: </span><span class="s3">var</span><span class="s4">(</span><span class="s3">--primary</span><span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>btn-calculate <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>background-color<span class="s4">: </span><span class="s3">var</span><span class="s4">(</span><span class="s3">--primary</span><span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">color</span>: <span class="s2">white</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">border</span>: <span class="s2">none</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">padding</span>: <span class="s6">12</span><span class="s2">px </span><span class="s6">24</span><span class="s2">px</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-radius<span class="s4">: </span><span class="s6">5</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">cursor</span>: <span class="s2">pointer</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">font-size</span>: <span class="s6">16</span><span class="s2">px</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>font-weight<span class="s4">: </span><span class="s6">600</span><span class="s4">;</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s1">transition</span><span class="s4">: </span>background-color <span class="s6">0.3</span>s<span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">width</span>: <span class="s6">100</span>%;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-top<span class="s4">: </span><span class="s6">10</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>btn-calculate<span class="s4">:</span>hover <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>background-color<span class="s4">: </span><span class="s5">#3367d6</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>results <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-top<span class="s4">: </span><span class="s6">30</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">padding</span>: <span class="s6">20</span><span class="s2">px</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-radius<span class="s4">: </span><span class="s6">5</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>background-color<span class="s4">: </span><span class="s5">#f8f9fa</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">display</span>: <span class="s2">none</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>results<span class="s4">.</span>active <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">display</span>: <span class="s2">block</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">animation</span>: <span class="s3">fadeIn </span><span class="s6">0.5</span><span class="s2">s</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>result-value <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">font-size</span>: <span class="s6">24</span><span class="s2">px</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>font-weight<span class="s4">: </span><span class="s6">700</span><span class="s4">;</span></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s1">color</span><span class="s4">: </span>var<span class="s4">(</span>--primary<span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">margin</span>: <span class="s6">10</span><span class="s2">px </span><span class="s6">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>result-category <span class="s4">{</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s1">display</span><span class="s4">: </span>inline-block<span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">padding</span>: <span class="s6">5</span><span class="s2">px </span><span class="s6">10</span><span class="s2">px</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-radius<span class="s4">: </span><span class="s6">20</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>font-weight<span class="s4">: </span><span class="s6">600</span><span class="s4">;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-top<span class="s4">: </span><span class="s6">5</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>bmi-categories <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-top<span class="s4">: </span><span class="s6">20</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>category <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">display</span>: <span class="s2">flex</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>justify-content<span class="s4">: </span><span class="s2">space-between</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">padding</span>: <span class="s6">8</span><span class="s2">px </span><span class="s6">12</span><span class="s2">px</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>margin-bottom<span class="s4">: </span><span class="s6">5</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-radius<span class="s4">: </span><span class="s6">5</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>category<span class="s4">.</span>active <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>background-color<span class="s4">: </span><span class="s3">var</span><span class="s4">(</span><span class="s3">--primary</span><span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">color</span>: <span class="s2">white</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span>.<span class="s3">chart </span>{</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">height</span>: <span class="s6">20</span><span class="s2">px</span>;</p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s1">background</span><span class="s4">: </span><span class="s3">linear-gradient</span><span class="s4">(</span><span class="s2">to right</span><span class="s4">, </span>#34a853<span class="s4">, </span>#fbbc05<span class="s4">, </span>#ea4335<span class="s4">);</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>border-radius<span class="s4">: </span><span class="s6">10</span><span class="s2">px</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">margin</span>: <span class="s6">20</span><span class="s2">px </span><span class="s6">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">position</span>: <span class="s2">relative</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span>.</span>chart-marker <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">position</span>: <span class="s2">absolute</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">top</span>: -<span class="s6">10</span><span class="s2">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">width</span>: <span class="s6">2</span><span class="s2">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">height</span>: <span class="s6">40</span><span class="s2">px</span>;</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">      </span></span>background-color<span class="s4">: </span><span class="s2">black</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span>@keyframes <span class="s3">fadeIn </span><span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s3">from </span>{ <span class="s1">opacity</span>: <span class="s6">0</span>; }</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s3">to </span>{ <span class="s1">opacity</span>: <span class="s6">1</span>; }</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">@media </span>(<span class="s1">max-width</span>: <span class="s6">768</span><span class="s2">px</span>) {</p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">      </span>.</span>calculator-tabs <span class="s4">{</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">        </span></span>flex-direction<span class="s4">: </span><span class="s2">column</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">      </span>.<span class="s3">tab-btn </span>{</p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s1">margin</span>: <span class="s6">5</span><span class="s2">px </span><span class="s6">0</span>;</p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s1">width</span>: <span class="s6">100</span>%;</p>
+<p class="p3"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">      </span>.</span>calculator-container <span class="s4">{</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s1">padding</span>: <span class="s6">20</span><span class="s2">px</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span>}</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">  </span></span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><span class="s3">&lt;div </span><span class="s1">class</span>="container"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span>&lt;h1&gt;</span>Health &amp; Fitness Calculators<span class="s3">&lt;/h1&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">    </span>&lt;p&gt;</span>Accurate tools to help you reach your fitness goals<span class="s3">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">  </span>&lt;div </span><span class="s1">class</span>="calculator-tabs"<span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span>&lt;button </span><span class="s1">class</span>="tab-btn active" <span class="s1">data-tab</span>="bmi"<span class="s3">&gt;</span><span class="s4">BMI Calculator</span><span class="s3">&lt;/button&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button <span class="s1">class</span><span class="s2">="tab-btn" </span><span class="s1">data-tab</span><span class="s2">="calories"</span>&gt;<span class="s4">Calorie Calculator</span>&lt;/button&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">    </span>&lt;button </span><span class="s1">class</span>="tab-btn" <span class="s1">data-tab</span>="one-rep-max"<span class="s3">&gt;</span><span class="s4">1-Rep Max</span><span class="s3">&lt;/button&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">  </span>&lt;div </span><span class="s1">class</span>="calculator-container"<span class="s3">&gt;</span></p>
+<p class="p9"><span class="s3"><span class="Apple-converted-space">    </span></span>&lt;!-- BMI Calculator --&gt;</p>
+<p class="p2"><span class="s8"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;div </span><span class="s1">id</span>="bmi-calculator" <span class="s1">class</span>="calculator active"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;<span class="s4">BMI Calculator</span>&lt;/h2&gt;</p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">      </span>&lt;p&gt;</span>Body Mass Index (BMI) is a measure of body fat based on height and weight.<span class="s3">&lt;/p&gt;</span></p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="units-toggle"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button <span class="s1">class</span><span class="s2">="active" </span><span class="s1">data-unit</span><span class="s2">="metric"</span>&gt;<span class="s4">Metric (kg, cm)</span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button <span class="s1">data-unit</span><span class="s2">="imperial"</span>&gt;<span class="s4">Imperial (lbs, in)</span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="form-group"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label <span class="s1">for</span><span class="s2">="bmi-weight"</span>&gt;<span class="s4">Weight</span>&lt;/label&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;input </span><span class="s1">type</span>="number" <span class="s1">id</span>="bmi-weight" <span class="s1">placeholder</span>="Enter your weight"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span <span class="s1">id</span><span class="s2">="bmi-weight-unit"</span>&gt;<span class="s4">kg</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="form-group"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label <span class="s1">for</span><span class="s2">="bmi-height"</span>&gt;<span class="s4">Height</span>&lt;/label&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;input </span><span class="s1">type</span>="number" <span class="s1">id</span>="bmi-height" <span class="s1">placeholder</span>="Enter your height"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span <span class="s1">id</span><span class="s2">="bmi-height-unit"</span>&gt;<span class="s4">cm</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;button </span><span class="s1">class</span>="btn-calculate" <span class="s1">id</span>="calculate-bmi"<span class="s3">&gt;</span><span class="s4">Calculate BMI</span><span class="s3">&lt;/button&gt;</span></p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">id</span>="bmi-results" <span class="s1">class</span>="results"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;<span class="s4">Your Results</span>&lt;/h3&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="result-value" <span class="s1">id</span>="bmi-value"<span class="s3">&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="result-category" <span class="s1">id</span>="bmi-category"<span class="s3">&gt;&lt;/div&gt;</span></p>
+<p class="p8"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div <span class="s1">class</span><span class="s2">="chart"</span>&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">          </span>&lt;div </span><span class="s1">class</span>="chart-marker" <span class="s1">id</span>="bmi-marker"<span class="s3">&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="bmi-categories"<span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">          </span>&lt;div </span><span class="s1">class</span>="category" <span class="s1">data-range</span>="0-18.5"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s4">Underweight</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s5">&amp;lt; </span><span class="s4">18.5</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">          </span>&lt;div </span><span class="s1">class</span>="category" <span class="s1">data-range</span>="18.5-24.9"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s4">Normal weight</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s4">18.5 - 24.9</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">          </span>&lt;div </span><span class="s1">class</span>="category" <span class="s1">data-range</span>="25-29.9"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s4">Overweight</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s4">25 - 29.9</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">          </span>&lt;div </span><span class="s1">class</span>="category" <span class="s1">data-range</span>="30-34.9"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s4">Obese (Class I)</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s4">30 - 34.9</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">          </span>&lt;div </span><span class="s1">class</span>="category" <span class="s1">data-range</span>="35-39.9"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s4">Obese (Class II)</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s4">35 - 39.9</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">          </span>&lt;div </span><span class="s1">class</span>="category" <span class="s1">data-range</span>="40-100"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s4">Obese (Class III)</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s5">&amp;gt; </span><span class="s4">40</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p9"><span class="s3"><span class="Apple-converted-space">    </span></span>&lt;!-- Calorie Calculator --&gt;</p>
+<p class="p2"><span class="s8"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;div </span><span class="s1">id</span>="calorie-calculator" <span class="s1">class</span>="calculator"<span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">      </span>&lt;h2&gt;</span>Calorie Needs Calculator<span class="s3">&lt;/h2&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">      </span>&lt;p&gt;</span>Calculate your daily calorie needs based on the Mifflin-St Jeor equation.<span class="s3">&lt;/p&gt;</span></p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="form-group"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label <span class="s1">for</span><span class="s2">="cal-gender"</span>&gt;<span class="s4">Gender</span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select <span class="s1">id</span><span class="s2">="cal-gender"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;option <span class="s1">value</span><span class="s2">="male"</span>&gt;<span class="s4">Male</span>&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;option <span class="s1">value</span><span class="s2">="female"</span>&gt;<span class="s4">Female</span>&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="form-group"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label <span class="s1">for</span><span class="s2">="cal-age"</span>&gt;<span class="s4">Age</span>&lt;/label&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;input </span><span class="s1">type</span>="number" <span class="s1">id</span>="cal-age" <span class="s1">placeholder</span>="Enter your age"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="units-toggle"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button <span class="s1">class</span><span class="s2">="active" </span><span class="s1">data-unit</span><span class="s2">="metric"</span>&gt;<span class="s4">Metric (kg, cm)</span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button <span class="s1">data-unit</span><span class="s2">="imperial"</span>&gt;<span class="s4">Imperial (lbs, in)</span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="form-group"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label <span class="s1">for</span><span class="s2">="cal-weight"</span>&gt;<span class="s4">Weight</span>&lt;/label&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;input </span><span class="s1">type</span>="number" <span class="s1">id</span>="cal-weight" <span class="s1">placeholder</span>="Enter your weight"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span <span class="s1">id</span><span class="s2">="cal-weight-unit"</span>&gt;<span class="s4">kg</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="form-group"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label <span class="s1">for</span><span class="s2">="cal-height"</span>&gt;<span class="s4">Height</span>&lt;/label&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;input </span><span class="s1">type</span>="number" <span class="s1">id</span>="cal-height" <span class="s1">placeholder</span>="Enter your height"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span <span class="s1">id</span><span class="s2">="cal-height-unit"</span>&gt;<span class="s4">cm</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="form-group"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label <span class="s1">for</span><span class="s2">="cal-activity"</span>&gt;<span class="s4">Activity Level</span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;select <span class="s1">id</span><span class="s2">="cal-activity"</span>&gt;</p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">          </span>&lt;option </span><span class="s1">value</span><span class="s2">="1.2"</span><span class="s3">&gt;</span>Sedentary (little or no exercise)<span class="s3">&lt;/option&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">          </span>&lt;option </span><span class="s1">value</span><span class="s2">="1.375"</span><span class="s3">&gt;</span>Lightly active (light exercise 1-3 days/week)<span class="s3">&lt;/option&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">          </span>&lt;option </span><span class="s1">value</span><span class="s2">="1.55"</span><span class="s3">&gt;</span>Moderately active (moderate exercise 3-5 days/week)<span class="s3">&lt;/option&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">          </span>&lt;option </span><span class="s1">value</span><span class="s2">="1.725"</span><span class="s3">&gt;</span>Very active (hard exercise 6-7 days/week)<span class="s3">&lt;/option&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">          </span>&lt;option </span><span class="s1">value</span><span class="s2">="1.9"</span><span class="s3">&gt;</span>Extra active (very hard exercise &amp; physical job)<span class="s3">&lt;/option&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;button </span><span class="s1">class</span>="btn-calculate" <span class="s1">id</span>="calculate-calories"<span class="s3">&gt;</span><span class="s4">Calculate Calories</span><span class="s3">&lt;/button&gt;</span></p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">id</span>="calorie-results" <span class="s1">class</span>="results"<span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span>&lt;h3&gt;</span>Your Daily Calorie Needs<span class="s3">&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="result-value" <span class="s1">id</span>="calorie-value"<span class="s3">&gt;&lt;/div&gt;</span></p>
+<p class="p8"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;<span class="s4">Goal Adjustments</span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div <span class="s1">class</span><span class="s2">="form-group"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;<span class="s4">Weight Goal</span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select <span class="s1">id</span><span class="s2">="cal-goal"</span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option <span class="s1">value</span><span class="s2">="maintain"</span>&gt;<span class="s4">Maintain weight</span>&lt;/option&gt;</p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span>&lt;option </span><span class="s1">value</span><span class="s2">="mild_loss"</span><span class="s3">&gt;</span>Mild weight loss (0.25 kg/week)<span class="s3">&lt;/option&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option <span class="s1">value</span><span class="s2">="loss"</span>&gt;<span class="s4">Weight loss (0.5 kg/week)</span>&lt;/option&gt;</p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span>&lt;option </span><span class="s1">value</span><span class="s2">="extreme_loss"</span><span class="s3">&gt;</span>Extreme weight loss (1 kg/week)<span class="s3">&lt;/option&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span>&lt;option </span><span class="s1">value</span><span class="s2">="mild_gain"</span><span class="s3">&gt;</span>Mild weight gain (0.25 kg/week)<span class="s3">&lt;/option&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option <span class="s1">value</span><span class="s2">="gain"</span>&gt;<span class="s4">Weight gain (0.5 kg/week)</span>&lt;/option&gt;</p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span>&lt;option </span><span class="s1">value</span><span class="s2">="extreme_gain"</span><span class="s3">&gt;</span>Extreme weight gain (1 kg/week)<span class="s3">&lt;/option&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="result-value" <span class="s1">id</span>="adjusted-calories"<span class="s3">&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p9"><span class="s3"><span class="Apple-converted-space">    </span></span>&lt;!-- 1-Rep Max Calculator --&gt;</p>
+<p class="p2"><span class="s8"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;div </span><span class="s1">id</span>="one-rep-max-calculator" <span class="s1">class</span>="calculator"<span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">      </span>&lt;h2&gt;</span>1-Rep Max Calculator<span class="s3">&lt;/h2&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">      </span>&lt;p&gt;</span>Estimate your one-repetition maximum (1RM) for any lift using the Epley formula.<span class="s3">&lt;/p&gt;</span></p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="units-toggle"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button <span class="s1">class</span><span class="s2">="active" </span><span class="s1">data-unit</span><span class="s2">="metric"</span>&gt;<span class="s4">Metric (kg)</span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button <span class="s1">data-unit</span><span class="s2">="imperial"</span>&gt;<span class="s4">Imperial (lbs)</span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="form-group"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label <span class="s1">for</span><span class="s2">="rm-weight"</span>&gt;<span class="s4">Weight Lifted</span>&lt;/label&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;input </span><span class="s1">type</span>="number" <span class="s1">id</span>="rm-weight" <span class="s1">placeholder</span>="Enter weight lifted"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span <span class="s1">id</span><span class="s2">="rm-weight-unit"</span>&gt;<span class="s4">kg</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">class</span>="form-group"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label <span class="s1">for</span><span class="s2">="rm-reps"</span>&gt;<span class="s4">Repetitions Completed</span>&lt;/label&gt;</p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;input </span><span class="s1">type</span>="number" <span class="s1">id</span>="rm-reps" <span class="s1">placeholder</span>="Enter reps (1-10)" <span class="s1">min</span>="1" <span class="s1">max</span>="10"<span class="s3">&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;button </span><span class="s1">class</span>="btn-calculate" <span class="s1">id</span>="calculate-rm"<span class="s3">&gt;</span><span class="s4">Calculate 1RM</span><span class="s3">&lt;/button&gt;</span></p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">      </span>&lt;div </span><span class="s1">id</span>="rm-results" <span class="s1">class</span>="results"<span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span>&lt;h3&gt;</span>Your Estimated 1-Rep Max<span class="s3">&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s3"><span class="Apple-converted-space">        </span>&lt;div </span><span class="s1">class</span>="result-value" <span class="s1">id</span>="rm-value"<span class="s3">&gt;&lt;/div&gt;</span></p>
+<p class="p8"><br></p>
+<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span>&lt;h4&gt;</span>Training Weight Recommendations<span class="s3">&lt;/h4&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;<span class="s4">% of 1RM</span>&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;<span class="s4">Weight</span>&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;th&gt;<span class="s4">Purpose</span>&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;<span class="s4">95-100%</span>&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td <span class="s1">id</span><span class="s2">="rm-95"</span>&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;<span class="s4">Maximal strength</span>&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;<span class="s4">85-90%</span>&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td <span class="s1">id</span><span class="s2">="rm-85"</span>&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;<span class="s4">Strength</span>&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;<span class="s4">75-85%</span>&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td <span class="s1">id</span><span class="s2">="rm-75"</span>&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;<span class="s4">Hypertrophy</span>&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;<span class="s4">60-75%</span>&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td <span class="s1">id</span><span class="s2">="rm-60"</span>&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;<span class="s4">Muscular endurance</span>&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p8"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p9"><span class="s3"><span class="Apple-converted-space">  </span></span>// Tab switching functionality</p>
+<p class="p10"><span class="s8"><span class="Apple-converted-space">  </span></span><span class="s7">const </span><i>tabBtns </i><span class="s4">= </span><i>document</i><span class="s4">.</span><span class="s5">querySelectorAll</span><span class="s4">(</span><span class="s2">'</span><span class="s9">.tab-btn</span><span class="s2">'</span><span class="s4">);</span></p>
+<p class="p10"><span class="s4"><span class="Apple-converted-space">  </span></span><span class="s7">const </span><i>calculators </i><span class="s4">= </span><i>document</i><span class="s4">.</span><span class="s5">querySelectorAll</span><span class="s4">(</span><span class="s2">'</span><span class="s9">.calculator</span><span class="s2">'</span><span class="s4">);</span></p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">  </span><span class="s10"><i>tabBtns</i></span>.<span class="s5">forEach</span>(btn =&gt; {</p>
+<p class="p3"><span class="Apple-converted-space">    </span>btn.<span class="s5">addEventListener</span>(<span class="s2">'click'</span>, () =&gt; {</p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">      </span></span>// Remove active class from all tabs and calculators</p>
+<p class="p3"><span class="s8"><span class="Apple-converted-space">      </span></span><span class="s10"><i>tabBtns</i></span>.<span class="s5">forEach</span>(btn =&gt; btn.<span class="s11">classList</span>.<span class="s5">remove</span>(<span class="s2">'active'</span>));</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s10"><i>calculators</i></span>.<span class="s5">forEach</span>(calc =&gt; calc.<span class="s11">classList</span>.<span class="s5">remove</span>(<span class="s2">'active'</span>));</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">      </span></span>// Add active class to clicked tab and corresponding calculator</p>
+<p class="p11"><span class="s8"><span class="Apple-converted-space">      </span></span><span class="s4">btn.</span>classList<span class="s4">.</span><span class="s5">add</span><span class="s4">(</span><span class="s2">'active'</span><span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">const </span><span class="s12">tabName </span>= btn.<span class="s5">getAttribute</span>(<span class="s2">'data-tab'</span>);</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">getElementById</span><span class="s4">(</span>`<span class="s4">${</span><span class="s12">tabName</span><span class="s4">}</span>-calculator`<span class="s4">).</span><span class="s11">classList</span><span class="s4">.</span><span class="s5">add</span><span class="s4">(</span>'active'<span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>});</p>
+<p class="p3"><span class="Apple-converted-space">  </span>});</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">  </span></span>// Unit toggle functionality</p>
+<p class="p10"><span class="s8"><span class="Apple-converted-space">  </span></span><span class="s7">const </span><i>unitToggles </i><span class="s4">= </span><i>document</i><span class="s4">.</span><span class="s5">querySelectorAll</span><span class="s4">(</span><span class="s2">'</span><span class="s9">.units-toggle</span><span class="s2">'</span><span class="s4">);</span></p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">  </span><span class="s10"><i>unitToggles</i></span>.<span class="s5">forEach</span>(toggle =&gt; {</p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">const </span><span class="s12">buttons </span>= toggle.<span class="s5">querySelectorAll</span>(<span class="s2">'</span><span class="s3">button</span><span class="s2">'</span>);</p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s12">buttons</span>.<span class="s5">forEach</span>(btn =&gt; {</p>
+<p class="p3"><span class="Apple-converted-space">      </span>btn.<span class="s5">addEventListener</span>(<span class="s2">'click'</span>, () =&gt; {</p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s12">buttons</span>.<span class="s5">forEach</span>(b =&gt; b.<span class="s11">classList</span>.<span class="s5">remove</span>(<span class="s2">'active'</span>));</p>
+<p class="p3"><span class="Apple-converted-space">        </span>btn.<span class="s11">classList</span>.<span class="s5">add</span>(<span class="s2">'active'</span>);</p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s7">const </span><span class="s12">unit </span>= btn.<span class="s5">getAttribute</span>(<span class="s2">'data-unit'</span>);</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span>// Update units in the corresponding calculator</p>
+<p class="p2"><span class="s8"><span class="Apple-converted-space">        </span></span><span class="s7">const </span><span class="s12">calculator </span><span class="s4">= btn.</span><span class="s5">closest</span><span class="s4">(</span>'<span class="s13">.calculator</span>'<span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s7">if </span>(<span class="s12">unit </span>=== <span class="s2">'metric'</span>) {</p>
+<p class="p3"><span class="Apple-converted-space">          </span><span class="s12">calculator</span>.<span class="s5">querySelectorAll</span>(<span class="s2">'</span><span class="s9">[id$="-weight-unit"]</span><span class="s2">'</span>).<span class="s5">forEach</span>(el =&gt; el.<span class="s11">textContent </span>= <span class="s2">'kg'</span>);</p>
+<p class="p3"><span class="Apple-converted-space">          </span><span class="s12">calculator</span>.<span class="s5">querySelectorAll</span>(<span class="s2">'</span><span class="s9">[id$="-height-unit"]</span><span class="s2">'</span>).<span class="s5">forEach</span>(el =&gt; el.<span class="s11">textContent </span>= <span class="s2">'cm'</span>);</p>
+<p class="p3"><span class="Apple-converted-space">        </span>} <span class="s7">else </span>{</p>
+<p class="p3"><span class="Apple-converted-space">          </span><span class="s12">calculator</span>.<span class="s5">querySelectorAll</span>(<span class="s2">'</span><span class="s9">[id$="-weight-unit"]</span><span class="s2">'</span>).<span class="s5">forEach</span>(el =&gt; el.<span class="s11">textContent </span>= <span class="s2">'lbs'</span>);</p>
+<p class="p3"><span class="Apple-converted-space">          </span><span class="s12">calculator</span>.<span class="s5">querySelectorAll</span>(<span class="s2">'</span><span class="s9">[id$="-height-unit"]</span><span class="s2">'</span>).<span class="s5">forEach</span>(el =&gt; el.<span class="s11">textContent </span>= <span class="s2">'in'</span>);</p>
+<p class="p3"><span class="Apple-converted-space">        </span>}</p>
+<p class="p3"><span class="Apple-converted-space">      </span>});</p>
+<p class="p3"><span class="Apple-converted-space">    </span>});</p>
+<p class="p3"><span class="Apple-converted-space">  </span>});</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">  </span></span>// BMI Calculator</p>
+<p class="p6"><span class="s8"><span class="Apple-converted-space">  </span></span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'calculate-bmi'</span><span class="s4">).</span>addEventListener<span class="s4">(</span><span class="s2">'click'</span><span class="s4">, () =&gt; {</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">const </span><span class="s12">unit </span><span class="s4">= </span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">querySelector</span><span class="s4">(</span>'<span class="s13">#bmi-calculator .units-toggle .active</span>'<span class="s4">).</span><span class="s5">getAttribute</span><span class="s4">(</span>'data-unit'<span class="s4">);</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">let </span><span class="s12">weight </span><span class="s4">= </span>parseFloat<span class="s4">(</span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'bmi-weight'</span><span class="s4">).</span><span class="s11">value</span><span class="s4">);</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">let </span><span class="s12">height </span><span class="s4">= </span>parseFloat<span class="s4">(</span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'bmi-height'</span><span class="s4">).</span><span class="s11">value</span><span class="s4">);</span></p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">if </span>(<span class="s5">isNaN</span>(<span class="s12">weight</span>) || <span class="s5">isNaN</span>(<span class="s12">height</span>)) {</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s5">alert</span><span class="s4">(</span>'Please enter valid weight and height'<span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">return</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">    </span></span>// Convert to metric if needed</p>
+<p class="p2"><span class="s8"><span class="Apple-converted-space">    </span></span><span class="s7">if </span><span class="s4">(</span><span class="s12">unit </span><span class="s4">=== </span>'imperial'<span class="s4">) {</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span>weight <span class="s4">= </span>weight <span class="s4">* </span><span class="s6">0.453592</span><span class="s4">; </span><span class="s8">// lbs to kg</span></p>
+<p class="p9"><span class="Apple-converted-space">      </span><span class="s12">height </span><span class="s4">= </span><span class="s12">height </span><span class="s4">* </span><span class="s6">2.54</span><span class="s4">; </span>// inches to cm</p>
+<p class="p9"><span class="Apple-converted-space">    </span><span class="s4">}</span></p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">    </span></span>// Convert height from cm to m</p>
+<p class="p12"><span class="s8"><span class="Apple-converted-space">    </span></span>height <span class="s4">= </span>height <span class="s4">/ </span><span class="s6">100</span><span class="s4">;</span></p>
+<p class="p5"><br></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">const </span>bmi <span class="s4">= </span>weight <span class="s4">/ (</span>height <span class="s4">* </span>height<span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">const </span><span class="s12">roundedBMI </span>= <span class="s10"><i>Math</i></span>.<span class="s5">round</span>(<span class="s12">bmi </span>* <span class="s6">10</span>) / <span class="s6">10</span>;</p>
+<p class="p5"><br></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'bmi-value'</span><span class="s4">).</span><span class="s11">textContent </span><span class="s4">= </span><span class="s12">roundedBMI</span><span class="s4">;</span></p>
+<p class="p5"><br></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">let </span>category <span class="s4">= </span><span class="s2">''</span><span class="s4">;</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">let </span>categoryClass <span class="s4">= </span><span class="s2">''</span><span class="s4">;</span></p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">if </span>(<span class="s12">bmi </span>&lt; <span class="s6">18.5</span>) {</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s12">category </span><span class="s4">= </span>'Underweight'<span class="s4">;</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span>categoryClass <span class="s4">= </span><span class="s2">'warning'</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>} <span class="s7">else if </span>(<span class="s12">bmi </span>&gt;= <span class="s6">18.5 </span>&amp;&amp; <span class="s12">bmi </span>&lt; <span class="s6">25</span>) {</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s12">category </span><span class="s4">= </span>'Normal weight'<span class="s4">;</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span>categoryClass <span class="s4">= </span><span class="s2">'success'</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>} <span class="s7">else if </span>(<span class="s12">bmi </span>&gt;= <span class="s6">25 </span>&amp;&amp; <span class="s12">bmi </span>&lt; <span class="s6">30</span>) {</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s12">category </span><span class="s4">= </span>'Overweight'<span class="s4">;</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span>categoryClass <span class="s4">= </span><span class="s2">'warning'</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>} <span class="s7">else </span>{</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s12">category </span>= <span class="s2">'Obese'</span>;</p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span>categoryClass <span class="s4">= </span><span class="s2">'danger'</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'bmi-category'</span><span class="s4">).</span><span class="s11">textContent </span><span class="s4">= </span><span class="s12">category</span><span class="s4">;</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">getElementById</span><span class="s4">(</span>'bmi-category'<span class="s4">).</span><span class="s11">className </span><span class="s4">= </span>`result-category <span class="s4">${</span><span class="s12">categoryClass</span><span class="s4">}</span>`<span class="s4">;</span></p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">    </span></span>// Update BMI marker on chart</p>
+<p class="p6"><span class="s8"><span class="Apple-converted-space">    </span></span><span class="s7">const </span><span class="s12">marker </span><span class="s4">= </span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'bmi-marker'</span><span class="s4">);</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">let </span>position <span class="s4">= </span><span class="s6">0</span><span class="s4">;</span></p>
+<p class="p5"><br></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">if </span><span class="s4">(</span>bmi <span class="s4">&lt; </span><span class="s6">15</span><span class="s4">) </span>position <span class="s4">= </span><span class="s6">0</span><span class="s4">;</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">else if </span><span class="s4">(</span>bmi <span class="s4">&gt; </span><span class="s6">40</span><span class="s4">) </span>position <span class="s4">= </span><span class="s6">100</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">else </span><span class="s12">position </span>= ((<span class="s12">bmi </span>- <span class="s6">15</span>) / <span class="s6">25</span>) * <span class="s6">100</span>;</p>
+<p class="p5"><br></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">    </span></span>marker<span class="s4">.</span><span class="s11">style</span><span class="s4">.</span><span class="s11">left </span><span class="s4">= </span><span class="s2">`</span><span class="s4">${</span>position<span class="s4">}</span><span class="s2">%`</span><span class="s4">;</span></p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">    </span></span>// Highlight active category</p>
+<p class="p2"><span class="s8"><span class="Apple-converted-space">    </span></span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">querySelectorAll</span><span class="s4">(</span>'<span class="s13">#bmi-calculator .category</span>'<span class="s4">).</span><span class="s5">forEach</span><span class="s4">(el =&gt; {</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span>el.<span class="s11">classList</span>.<span class="s5">remove</span>(<span class="s2">'active'</span>);</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">const </span><span class="s12">range </span>= el.<span class="s5">getAttribute</span>(<span class="s2">'data-range'</span>).<span class="s5">split</span>(<span class="s2">'-'</span>);</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">const </span><span class="s12">min </span>= <span class="s5">parseFloat</span>(<span class="s12">range</span>[<span class="s6">0</span>]);</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">const </span><span class="s12">max </span>= <span class="s5">parseFloat</span>(<span class="s12">range</span>[<span class="s6">1</span>]);</p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">if </span>(<span class="s12">bmi </span>&gt;= <span class="s12">min </span>&amp;&amp; <span class="s12">bmi </span>&lt;= <span class="s12">max</span>) {</p>
+<p class="p3"><span class="Apple-converted-space">        </span>el.<span class="s11">classList</span>.<span class="s5">add</span>(<span class="s2">'active'</span>);</p>
+<p class="p3"><span class="Apple-converted-space">      </span>}</p>
+<p class="p3"><span class="Apple-converted-space">    </span>});</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">getElementById</span><span class="s4">(</span>'bmi-results'<span class="s4">).</span><span class="s11">classList</span><span class="s4">.</span><span class="s5">add</span><span class="s4">(</span>'active'<span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">  </span>});</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">  </span></span>// Calorie Calculator - Fixed version</p>
+<p class="p9"><span class="Apple-converted-space">  </span><span class="s7">let </span><span class="s10"><i>maintenanceCalories </i></span><span class="s4">= </span><span class="s6">0</span><span class="s4">; </span>// Store the calculated value globally</p>
+<p class="p13"><br></p>
+<p class="p6"><span class="s8"><span class="Apple-converted-space">  </span></span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'calculate-calories'</span><span class="s4">).</span>addEventListener<span class="s4">(</span><span class="s2">'click'</span><span class="s4">, () =&gt; {</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">const </span><span class="s12">gender </span><span class="s4">= </span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'cal-gender'</span><span class="s4">).</span><span class="s11">value</span><span class="s4">;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">const </span><span class="s12">age </span><span class="s4">= </span>parseFloat<span class="s4">(</span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'cal-age'</span><span class="s4">).</span><span class="s11">value</span><span class="s4">);</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">const </span><span class="s12">unit </span><span class="s4">= </span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">querySelector</span><span class="s4">(</span>'<span class="s13">#calorie-calculator .units-toggle .active</span>'<span class="s4">).</span><span class="s5">getAttribute</span><span class="s4">(</span>'data-unit'<span class="s4">);</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">let </span><span class="s12">weight </span><span class="s4">= </span>parseFloat<span class="s4">(</span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'cal-weight'</span><span class="s4">).</span><span class="s11">value</span><span class="s4">);</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">let </span><span class="s12">height </span><span class="s4">= </span>parseFloat<span class="s4">(</span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'cal-height'</span><span class="s4">).</span><span class="s11">value</span><span class="s4">);</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">const </span><span class="s12">activity </span><span class="s4">= </span>parseFloat<span class="s4">(</span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'cal-activity'</span><span class="s4">).</span><span class="s11">value</span><span class="s4">);</span></p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">if </span>(<span class="s5">isNaN</span>(<span class="s12">age</span>) || <span class="s5">isNaN</span>(<span class="s12">weight</span>) || <span class="s5">isNaN</span>(<span class="s12">height</span>)) {</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s5">alert</span><span class="s4">(</span>'Please enter valid age, weight, and height'<span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">return</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">    </span></span>// Convert to metric if needed</p>
+<p class="p2"><span class="s8"><span class="Apple-converted-space">    </span></span><span class="s7">if </span><span class="s4">(</span><span class="s12">unit </span><span class="s4">=== </span>'imperial'<span class="s4">) {</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span>weight <span class="s4">= </span>weight <span class="s4">* </span><span class="s6">0.453592</span><span class="s4">; </span><span class="s8">// lbs to kg</span></p>
+<p class="p9"><span class="Apple-converted-space">      </span><span class="s12">height </span><span class="s4">= </span><span class="s12">height </span><span class="s4">* </span><span class="s6">2.54</span><span class="s4">; </span>// inches to cm</p>
+<p class="p9"><span class="Apple-converted-space">    </span><span class="s4">}</span></p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">    </span></span>// Mifflin-St Jeor Equation</p>
+<p class="p9"><span class="Apple-converted-space">    </span><span class="s7">let </span><span class="s12">bmr</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">if </span>(<span class="s12">gender </span>=== <span class="s2">'male'</span>) {</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s12">bmr </span>= (<span class="s6">10 </span>* <span class="s12">weight</span>) + (<span class="s6">6.25 </span>* <span class="s12">height</span>) - (<span class="s6">5 </span>* <span class="s12">age</span>) + <span class="s6">5</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>} <span class="s7">else </span>{</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s12">bmr </span>= (<span class="s6">10 </span>* <span class="s12">weight</span>) + (<span class="s6">6.25 </span>* <span class="s12">height</span>) - (<span class="s6">5 </span>* <span class="s12">age</span>) - <span class="s6">161</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p10"><span class="s4"><span class="Apple-converted-space">    </span></span><i>maintenanceCalories </i><span class="s4">= </span><i>Math</i><span class="s4">.</span><span class="s5">round</span><span class="s4">(</span><span class="s12">bmr </span><span class="s4">* </span><span class="s12">activity</span><span class="s4">);</span></p>
+<p class="p5"><br></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">getElementById</span><span class="s4">(</span>'calorie-value'<span class="s4">).</span><span class="s11">textContent </span><span class="s4">= </span>`<span class="s4">${</span><span class="s10"><i>maintenanceCalories</i></span><span class="s4">}</span> calories/day`<span class="s4">;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span>updateAdjustedCalories<span class="s4">(</span><span class="s10"><i>maintenanceCalories</i></span><span class="s4">);</span></p>
+<p class="p5"><br></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">getElementById</span><span class="s4">(</span>'calorie-results'<span class="s4">).</span><span class="s11">classList</span><span class="s4">.</span><span class="s5">add</span><span class="s4">(</span>'active'<span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">  </span>});</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">  </span></span>// Update adjusted calories when goal changes</p>
+<p class="p6"><span class="s8"><span class="Apple-converted-space">  </span></span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'cal-goal'</span><span class="s4">).</span>addEventListener<span class="s4">(</span><span class="s2">'change'</span><span class="s4">, </span><span class="s7">function</span><span class="s4">() {</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span>updateAdjustedCalories<span class="s4">(</span><span class="s10"><i>maintenanceCalories</i></span><span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">  </span>});</p>
+<p class="p5"><br></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">  </span></span><span class="s7">function </span>updateAdjustedCalories<span class="s4">(maintenance) {</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">const </span><span class="s12">goal </span><span class="s4">= </span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'cal-goal'</span><span class="s4">).</span><span class="s11">value</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">let </span><span class="s12">adjusted </span>= maintenance;</p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">let </span>message <span class="s4">= </span><span class="s2">''</span><span class="s4">;</span></p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">switch</span>(<span class="s12">goal</span>) {</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s7">case </span>'mild_loss'<span class="s4">:</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s12">adjusted </span>= maintenance - <span class="s6">250</span>;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s12">message </span><span class="s4">= </span>'Mild weight loss (0.25 kg/week)'<span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s7">break</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">case </span><span class="s2">'loss'</span>:</p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s12">adjusted </span>= maintenance - <span class="s6">500</span>;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s12">message </span><span class="s4">= </span>'Weight loss (0.5 kg/week)'<span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s7">break</span>;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s7">case </span>'extreme_loss'<span class="s4">:</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s12">adjusted </span>= maintenance - <span class="s6">1000</span>;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s12">message </span><span class="s4">= </span>'Extreme weight loss (1 kg/week)'<span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s7">break</span>;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s7">case </span>'mild_gain'<span class="s4">:</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s12">adjusted </span>= maintenance + <span class="s6">250</span>;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s12">message </span><span class="s4">= </span>'Mild weight gain (0.25 kg/week)'<span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s7">break</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">case </span><span class="s2">'gain'</span>:</p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s12">adjusted </span>= maintenance + <span class="s6">500</span>;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s12">message </span><span class="s4">= </span>'Weight gain (0.5 kg/week)'<span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s7">break</span>;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s7">case </span>'extreme_gain'<span class="s4">:</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s12">adjusted </span>= maintenance + <span class="s6">1000</span>;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s12">message </span><span class="s4">= </span>'Extreme weight gain (1 kg/week)'<span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">        </span><span class="s7">break</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">default</span>:</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s12">message </span><span class="s4">= </span>'Maintain weight'<span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">getElementById</span><span class="s4">(</span>'adjusted-calories'<span class="s4">).</span><span class="s11">textContent </span><span class="s4">= </span>`<span class="s4">${</span><span class="s12">adjusted</span><span class="s4">}</span> calories/day (<span class="s4">${</span><span class="s12">message</span><span class="s4">}</span>)`<span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">  </span>}</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">  </span></span>// 1-Rep Max Calculator</p>
+<p class="p6"><span class="s8"><span class="Apple-converted-space">  </span></span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'calculate-rm'</span><span class="s4">).</span>addEventListener<span class="s4">(</span><span class="s2">'click'</span><span class="s4">, () =&gt; {</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">const </span><span class="s12">unit </span><span class="s4">= </span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">querySelector</span><span class="s4">(</span>'<span class="s13">#one-rep-max-calculator .units-toggle .active</span>'<span class="s4">).</span><span class="s5">getAttribute</span><span class="s4">(</span>'data-unit'<span class="s4">);</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">let </span><span class="s12">weight </span><span class="s4">= </span>parseFloat<span class="s4">(</span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'rm-weight'</span><span class="s4">).</span><span class="s11">value</span><span class="s4">);</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">const </span><span class="s12">reps </span><span class="s4">= </span>parseFloat<span class="s4">(</span><span class="s10"><i>document</i></span><span class="s4">.</span>getElementById<span class="s4">(</span><span class="s2">'rm-reps'</span><span class="s4">).</span><span class="s11">value</span><span class="s4">);</span></p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">if </span>(<span class="s5">isNaN</span>(<span class="s12">weight</span>) || <span class="s5">isNaN</span>(<span class="s12">reps</span>) || <span class="s12">reps </span>&lt; <span class="s6">1 </span>|| <span class="s12">reps </span>&gt; <span class="s6">10</span>) {</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s5">alert</span><span class="s4">(</span>'Please enter valid weight and reps (1-10)'<span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">return</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">    </span></span>// Convert to kg if needed (for calculation)</p>
+<p class="p2"><span class="s8"><span class="Apple-converted-space">    </span></span><span class="s7">if </span><span class="s4">(</span><span class="s12">unit </span><span class="s4">=== </span>'imperial'<span class="s4">) {</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span>weight <span class="s4">= </span>weight <span class="s4">* </span><span class="s6">0.453592</span><span class="s4">; </span><span class="s8">// lbs to kg</span></p>
+<p class="p9"><span class="Apple-converted-space">    </span><span class="s4">}</span></p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">    </span></span>// Epley Formula</p>
+<p class="p12"><span class="s8"><span class="Apple-converted-space">    </span></span><span class="s7">const </span>oneRepMax <span class="s4">= </span>weight <span class="s4">* (</span><span class="s6">1 </span><span class="s4">+ (</span><span class="s6">0.0333 </span><span class="s4">* </span>reps<span class="s4">));</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">const </span>roundedMax <span class="s4">= </span><span class="s10"><i>Math</i></span><span class="s4">.</span><span class="s5">round</span><span class="s4">(</span>oneRepMax <span class="s4">* </span><span class="s6">10</span><span class="s4">) / </span><span class="s6">10</span><span class="s4">;</span></p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">    </span></span>// Convert back to imperial if needed</p>
+<p class="p12"><span class="s8"><span class="Apple-converted-space">    </span></span><span class="s7">let </span>displayMax <span class="s4">= </span>roundedMax<span class="s4">;</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">let </span>displayUnit <span class="s4">= </span><span class="s2">'kg'</span><span class="s4">;</span></p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s7">if </span>(<span class="s12">unit </span>=== <span class="s2">'imperial'</span>) {</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s12">displayMax </span>= <span class="s10"><i>Math</i></span>.<span class="s5">round</span>((<span class="s12">roundedMax </span>/ <span class="s6">0.453592</span>) * <span class="s6">10</span>) / <span class="s6">10</span>;</p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span>displayUnit <span class="s4">= </span><span class="s2">'lbs'</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p5"><br></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">getElementById</span><span class="s4">(</span><span class="s2">'rm-value'</span><span class="s4">).</span><span class="s11">textContent </span><span class="s4">= </span><span class="s2">`</span><span class="s4">${</span>displayMax<span class="s4">} ${</span>displayUnit<span class="s4">}</span><span class="s2">`</span><span class="s4">;</span></p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">    </span></span>// Calculate training weights</p>
+<p class="p14"><span class="s8"><span class="Apple-converted-space">    </span></span><span class="s7">const </span><span class="s12">percentages </span><span class="s4">= [</span>0.95<span class="s4">, </span>0.85<span class="s4">, </span>0.75<span class="s4">, </span>0.6<span class="s4">];</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s7">const </span><span class="s12">weightElements </span><span class="s4">= [</span>'rm-95'<span class="s4">, </span>'rm-85'<span class="s4">, </span>'rm-75'<span class="s4">, </span>'rm-60'<span class="s4">];</span></p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s12">percentages</span>.<span class="s5">forEach</span>((pct, i) =&gt; {</p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s7">let </span>trainingWeight <span class="s4">= </span>roundedMax <span class="s4">* pct;</span></p>
+<p class="p5"><br></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s7">if </span>(<span class="s12">unit </span>=== <span class="s2">'imperial'</span>) {</p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">        </span></span>trainingWeight <span class="s4">= </span>trainingWeight <span class="s4">/ </span><span class="s6">0.453592</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span>}</p>
+<p class="p5"><br></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span>trainingWeight <span class="s4">= </span><span class="s10"><i>Math</i></span><span class="s4">.</span><span class="s5">round</span><span class="s4">(</span>trainingWeight <span class="s4">* </span><span class="s6">10</span><span class="s4">) / </span><span class="s6">10</span><span class="s4">;</span></p>
+<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">getElementById</span><span class="s4">(</span>weightElements<span class="s4">[i]).</span><span class="s11">textContent </span><span class="s4">= </span><span class="s2">`</span><span class="s4">${</span>trainingWeight<span class="s4">} ${</span>displayUnit<span class="s4">}</span><span class="s2">`</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">    </span>});</p>
+<p class="p5"><br></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s10"><i>document</i></span><span class="s4">.</span><span class="s5">getElementById</span><span class="s4">(</span>'rm-results'<span class="s4">).</span><span class="s11">classList</span><span class="s4">.</span><span class="s5">add</span><span class="s4">(</span>'active'<span class="s4">);</span></p>
+<p class="p3"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p8"><br></p>
+</body>
+</html>
